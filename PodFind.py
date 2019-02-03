@@ -116,11 +116,11 @@ class PodFind(object):
 
 		
 if __name__ == "__main__":
-	targetList = ['AFNetworking']
+	targetList = ['SDWebImage']
 	targetList2 = ['LPDTableViewKit']
-	versionDic = {'AFNetworking':'3.1.0'}
+	versionDic = {'Fabric':'1.4.0'}
 	versionDic2 = {'LPDTableViewKit':'0.3.5'}
-	findObj = PodFind('/Users/xx/.cocoapods/repos/master/Specs', targetList+targetList2,'/Users/xx/Desktop/TempGithub',dict(versionDic,**versionDic2),'/Users/xx/Desktop/TempSpec')
+	findObj = PodFind('/Users/heboyce/.cocoapods/repos/master/Specs', targetList,'/Users/heboyce/Desktop/TempGithub',dict(versionDic,**versionDic2),'/Users/heboyce/Desktop/TempSpec')
 	
 	findObj.findAllPath()
 		
